@@ -10,7 +10,6 @@ import java.util.List;
 @Entity
 @Table(name = "cliente")
 @EqualsAndHashCode
-@NoArgsConstructor
 @AllArgsConstructor
 public class Cliente {
 
@@ -40,6 +39,10 @@ public class Cliente {
     @Getter
     @Setter
     private String observacoes;
+
+    public Cliente() {
+
+    }
 
     @Override
     public String toString() {
